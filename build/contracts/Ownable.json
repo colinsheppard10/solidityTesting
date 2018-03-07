@@ -1,0 +1,182 @@
+{
+  "contractName": "Ownable",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "testOwnable",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6101578061001e6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a72305820549373e087846591af4fe6d45170aa9d4133668328e2332582b303a3b425f8490029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a72305820549373e087846591af4fe6d45170aa9d4133668328e2332582b303a3b425f8490029",
+  "sourceMap": "26:119:3:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:119:3:-;;;;;;;;;;;;;;;;;;;;;;;;50:93;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:93:3;93:6;;:::i;:::-;111:25;;;;;;;;;;;;;;;;;;;;50:93;:::o;26:119::-;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract Ownable { \n    function testOwnable() public pure returns(string) {\n        return \"from testOwnable\";\n    }\n}\n\n",
+  "sourcePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/Ownable.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/Ownable.sol",
+      "exportedSymbols": {
+        "Ownable": [
+          136
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 127,
+        "name": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            136
+          ],
+          "name": "Ownable",
+          "scope": 137
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "testOwnable",
+              "payable": false,
+              "scope": 136,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 128,
+                "name": "ParameterList",
+                "src": "70:2:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 135,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 129,
+                        "name": "ElementaryTypeName",
+                        "src": "93:6:3"
+                      }
+                    ],
+                    "id": 130,
+                    "name": "VariableDeclaration",
+                    "src": "93:6:3"
+                  }
+                ],
+                "id": 131,
+                "name": "ParameterList",
+                "src": "92:8:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 131
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "66726f6d20746573744f776e61626c65",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "string",
+                          "type": "literal_string \"from testOwnable\"",
+                          "value": "from testOwnable"
+                        },
+                        "id": 132,
+                        "name": "Literal",
+                        "src": "118:18:3"
+                      }
+                    ],
+                    "id": 133,
+                    "name": "Return",
+                    "src": "111:25:3"
+                  }
+                ],
+                "id": 134,
+                "name": "Block",
+                "src": "101:42:3"
+              }
+            ],
+            "id": 135,
+            "name": "FunctionDefinition",
+            "src": "50:93:3"
+          }
+        ],
+        "id": 136,
+        "name": "ContractDefinition",
+        "src": "26:119:3"
+      }
+    ],
+    "id": 137,
+    "name": "SourceUnit",
+    "src": "0:147:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-07T19:59:21.396Z"
+}

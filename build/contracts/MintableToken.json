@@ -1,0 +1,235 @@
+{
+  "contractName": "MintableToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052600b600055341561001457600080fd5b60d5806100226000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde0314604e57806317d7de7c146074575b600080fd5b3415605857600080fd5b605e609a565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b608460a0565b6040518082815260200191505060405180910390f35b60005481565b600080549050905600a165627a7a72305820ed71782e5d3e002b48a196aada0ec38bc5f22438d439aa389da46a6a9976926a0029",
+  "deployedBytecode": "0x6060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde0314604e57806317d7de7c146074575b600080fd5b3415605857600080fd5b605e609a565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b608460a0565b6040518082815260200191505060405180910390f35b60005481565b600080549050905600a165627a7a72305820ed71782e5d3e002b48a196aada0ec38bc5f22438d439aa389da46a6a9976926a0029",
+  "sourceMap": "26:123:2:-;;;72:2;54:20;;26:123;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:123:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;54:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;79:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;54:20;;;;:::o;79:68::-;118:3;138:4;;131:11;;79:68;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract  MintableToken {\n  int public name = 11;\n\n  function getName() public view returns(int) {\n      return name;\n  }\n}",
+  "sourcePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MintableToken.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MintableToken.sol",
+      "exportedSymbols": {
+        "MintableToken": [
+          125
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 113,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            125
+          ],
+          "name": "MintableToken",
+          "scope": 126
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "name",
+              "scope": 125,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "int256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "int",
+                  "type": "int256"
+                },
+                "id": 114,
+                "name": "ElementaryTypeName",
+                "src": "54:3:2"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3131",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 11",
+                  "value": "11"
+                },
+                "id": 115,
+                "name": "Literal",
+                "src": "72:2:2"
+              }
+            ],
+            "id": 116,
+            "name": "VariableDeclaration",
+            "src": "54:20:2"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "getName",
+              "payable": false,
+              "scope": 125,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 117,
+                "name": "ParameterList",
+                "src": "95:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 124,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 118,
+                        "name": "ElementaryTypeName",
+                        "src": "118:3:2"
+                      }
+                    ],
+                    "id": 119,
+                    "name": "VariableDeclaration",
+                    "src": "118:3:2"
+                  }
+                ],
+                "id": 120,
+                "name": "ParameterList",
+                "src": "117:5:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 120
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 116,
+                          "type": "int256",
+                          "value": "name"
+                        },
+                        "id": 121,
+                        "name": "Identifier",
+                        "src": "138:4:2"
+                      }
+                    ],
+                    "id": 122,
+                    "name": "Return",
+                    "src": "131:11:2"
+                  }
+                ],
+                "id": 123,
+                "name": "Block",
+                "src": "123:24:2"
+              }
+            ],
+            "id": 124,
+            "name": "FunctionDefinition",
+            "src": "79:68:2"
+          }
+        ],
+        "id": 125,
+        "name": "ContractDefinition",
+        "src": "26:123:2"
+      }
+    ],
+    "id": 126,
+    "name": "SourceUnit",
+    "src": "0:149:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-07T19:59:21.395Z"
+}
