@@ -1,35 +1,32 @@
 pragma solidity ^0.4.18;
 
-import "./Ownable.sol";
-import "./MintableToken.sol";
+import "./MyImport.sol";
+import "./MyDataType.sol";
 // import "zeppelin-solidity/contracts/crowdsale/Crowdsale.sol";
 // import "zeppelin-solidity/contracts/crowdsale/validation/CappedCrowdsale.sol";
 // import "zeppelin-solidity/contracts/crowdsale/distribution/RefundableCrowdsale.sol";
 // import "zeppelin-solidity/contracts/crowdsale/emission/MintedCrowdsale.sol";
 // import "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
 
-contract Greetings is Ownable {
+contract Greetings is MyImport {
     string message;
-    MintableToken token;
+    MyDataType myDT;
 
-    // function Greetings(string _message, MintableToken _token) public {
-    //     message = _message;
-    //     token = _token;
-    // }
-    function Greetings(string _message) public {
-        token = new MintableToken();
+    function Greetings(string _message) public 
+        MyImport(_message, new MyDataType())
+    {
         message = _message;
     }
-
-    function setMessage(string _message) public {
-        message = _message;
-    } 
 
     function getMessage() public view returns(string) {
         return message;
     }
 
-    function getToken() public view returns(int) {
-        return token.getName();
+    function getName() public view returns(string) {
+        return name;
+    }
+
+    function getMyDataType() internal returns (MyDataType) {
+        return new MyDataType();
     }
 }

@@ -1,0 +1,182 @@
+{
+  "contractName": "MyDataType",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6101578061001e6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601281526020017f68692066726f6d206d7944617461547970650000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a72305820324c4af76168d2c97bf41e232626c2ceb8ad445fb5f49163fc7c5a49e20e57030029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601281526020017f68692066726f6d206d7944617461547970650000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a72305820324c4af76168d2c97bf41e232626c2ceb8ad445fb5f49163fc7c5a49e20e57030029",
+  "sourceMap": "26:118:2:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:118:2:-;;;;;;;;;;;;;;;;;;;;;;;;52:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:90:2;90:6;;:::i;:::-;108:27;;;;;;;;;;;;;;;;;;;;52:90;:::o;26:118::-;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\ncontract MyDataType {\n    function value() pure public returns (string) {\n        return \"hi from myDataType\";\n    }\n}",
+  "sourcePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyDataType.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyDataType.sol",
+      "exportedSymbols": {
+        "MyDataType": [
+          120
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 111,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            120
+          ],
+          "name": "MyDataType",
+          "scope": 121
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "value",
+              "payable": false,
+              "scope": 120,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 112,
+                "name": "ParameterList",
+                "src": "66:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 119,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 113,
+                        "name": "ElementaryTypeName",
+                        "src": "90:6:2"
+                      }
+                    ],
+                    "id": 114,
+                    "name": "VariableDeclaration",
+                    "src": "90:6:2"
+                  }
+                ],
+                "id": 115,
+                "name": "ParameterList",
+                "src": "89:8:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 115
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "68692066726f6d206d794461746154797065",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "string",
+                          "type": "literal_string \"hi from myDataType\"",
+                          "value": "hi from myDataType"
+                        },
+                        "id": 116,
+                        "name": "Literal",
+                        "src": "115:20:2"
+                      }
+                    ],
+                    "id": 117,
+                    "name": "Return",
+                    "src": "108:27:2"
+                  }
+                ],
+                "id": 118,
+                "name": "Block",
+                "src": "98:44:2"
+              }
+            ],
+            "id": 119,
+            "name": "FunctionDefinition",
+            "src": "52:90:2"
+          }
+        ],
+        "id": 120,
+        "name": "ContractDefinition",
+        "src": "26:118:2"
+      }
+    ],
+    "id": 121,
+    "name": "SourceUnit",
+    "src": "0:144:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-07T21:49:16.324Z"
+}

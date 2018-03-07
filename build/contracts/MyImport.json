@@ -1,0 +1,468 @@
+{
+  "contractName": "MyImport",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "testOwnable",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_myDT",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6040516102a13803806102a183398101604052808051820191906020018051906020019091905050816000908051906020019061004d929190610096565b5080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505061013b565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100d757805160ff1916838001178555610105565b82800160010185558215610105579182015b828111156101045782518255916020019190600101906100e9565b5b5090506101129190610116565b5090565b61013891905b8082111561013457600081600090555060010161011c565b5090565b90565b6101578061014a6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a723058207d9c7f680d1c7018e92bc1a478e4aec033c1c6431b325cb661f5dfaa199701f40029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a723058207d9c7f680d1c7018e92bc1a478e4aec033c1c6431b325cb661f5dfaa199701f40029",
+  "sourceMap": "54:273:3:-;;;118:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;192:5;185:4;:12;;;;;;;;;;;;:::i;:::-;;214:5;207:4;;:12;;;;;;;;;;;;;;;;;;118:108;;54:273;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "54:273:3:-;;;;;;;;;;;;;;;;;;;;;;;;232:93;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;232:93:3;275:6;;:::i;:::-;293:25;;;;;;;;;;;;;;;;;;;;232:93;:::o;54:273::-;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\nimport \"./MyDataType.sol\";\n\ncontract MyImport { \n    string name;\n    MyDataType myDT;\n\n    function MyImport(string _name, MyDataType _myDT) public {\n        name = _name;\n        myDT = _myDT;\n    }\n\n    function testOwnable() public pure returns(string) {\n        return \"from testOwnable\";\n    }\n}\n\n",
+  "sourcePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyImport.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyImport.sol",
+      "exportedSymbols": {
+        "MyImport": [
+          152
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 122,
+        "name": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 121,
+          "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyDataType.sol",
+          "file": "./MyDataType.sol",
+          "scope": 153,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 123,
+        "name": "ImportDirective",
+        "src": "26:26:3"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            152
+          ],
+          "name": "MyImport",
+          "scope": 153
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "name",
+              "scope": 152,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string storage pointer"
+                },
+                "id": 124,
+                "name": "ElementaryTypeName",
+                "src": "79:6:3"
+              }
+            ],
+            "id": 125,
+            "name": "VariableDeclaration",
+            "src": "79:11:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "myDT",
+              "scope": 152,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract MyDataType",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "MyDataType",
+                  "referencedDeclaration": 120,
+                  "type": "contract MyDataType"
+                },
+                "id": 126,
+                "name": "UserDefinedTypeName",
+                "src": "96:10:3"
+              }
+            ],
+            "id": 127,
+            "name": "VariableDeclaration",
+            "src": "96:15:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "MyImport",
+              "payable": false,
+              "scope": 152,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_name",
+                      "scope": 143,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 128,
+                        "name": "ElementaryTypeName",
+                        "src": "136:6:3"
+                      }
+                    ],
+                    "id": 129,
+                    "name": "VariableDeclaration",
+                    "src": "136:12:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_myDT",
+                      "scope": 143,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract MyDataType",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "MyDataType",
+                          "referencedDeclaration": 120,
+                          "type": "contract MyDataType"
+                        },
+                        "id": 130,
+                        "name": "UserDefinedTypeName",
+                        "src": "150:10:3"
+                      }
+                    ],
+                    "id": 131,
+                    "name": "VariableDeclaration",
+                    "src": "150:16:3"
+                  }
+                ],
+                "id": 132,
+                "name": "ParameterList",
+                "src": "135:32:3"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 133,
+                "name": "ParameterList",
+                "src": "175:0:3"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 125,
+                              "type": "string storage ref",
+                              "value": "name"
+                            },
+                            "id": 134,
+                            "name": "Identifier",
+                            "src": "185:4:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 129,
+                              "type": "string memory",
+                              "value": "_name"
+                            },
+                            "id": 135,
+                            "name": "Identifier",
+                            "src": "192:5:3"
+                          }
+                        ],
+                        "id": 136,
+                        "name": "Assignment",
+                        "src": "185:12:3"
+                      }
+                    ],
+                    "id": 137,
+                    "name": "ExpressionStatement",
+                    "src": "185:12:3"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract MyDataType"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 127,
+                              "type": "contract MyDataType",
+                              "value": "myDT"
+                            },
+                            "id": 138,
+                            "name": "Identifier",
+                            "src": "207:4:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 131,
+                              "type": "contract MyDataType",
+                              "value": "_myDT"
+                            },
+                            "id": 139,
+                            "name": "Identifier",
+                            "src": "214:5:3"
+                          }
+                        ],
+                        "id": 140,
+                        "name": "Assignment",
+                        "src": "207:12:3"
+                      }
+                    ],
+                    "id": 141,
+                    "name": "ExpressionStatement",
+                    "src": "207:12:3"
+                  }
+                ],
+                "id": 142,
+                "name": "Block",
+                "src": "175:51:3"
+              }
+            ],
+            "id": 143,
+            "name": "FunctionDefinition",
+            "src": "118:108:3"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "testOwnable",
+              "payable": false,
+              "scope": 152,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 144,
+                "name": "ParameterList",
+                "src": "252:2:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 151,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 145,
+                        "name": "ElementaryTypeName",
+                        "src": "275:6:3"
+                      }
+                    ],
+                    "id": 146,
+                    "name": "VariableDeclaration",
+                    "src": "275:6:3"
+                  }
+                ],
+                "id": 147,
+                "name": "ParameterList",
+                "src": "274:8:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 147
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "66726f6d20746573744f776e61626c65",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "string",
+                          "type": "literal_string \"from testOwnable\"",
+                          "value": "from testOwnable"
+                        },
+                        "id": 148,
+                        "name": "Literal",
+                        "src": "300:18:3"
+                      }
+                    ],
+                    "id": 149,
+                    "name": "Return",
+                    "src": "293:25:3"
+                  }
+                ],
+                "id": 150,
+                "name": "Block",
+                "src": "283:42:3"
+              }
+            ],
+            "id": 151,
+            "name": "FunctionDefinition",
+            "src": "232:93:3"
+          }
+        ],
+        "id": 152,
+        "name": "ContractDefinition",
+        "src": "54:273:3"
+      }
+    ],
+    "id": 153,
+    "name": "SourceUnit",
+    "src": "0:329:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-07T21:49:16.323Z"
+}
