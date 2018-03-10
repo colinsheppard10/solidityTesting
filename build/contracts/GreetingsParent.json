@@ -1,5 +1,5 @@
 {
-  "contractName": "MyImport",
+  "contractName": "GreetingsParent",
   "abi": [
     {
       "constant": true,
@@ -31,18 +31,18 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6040516102a13803806102a183398101604052808051820191906020018051906020019091905050816000908051906020019061004d929190610096565b5080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505061013b565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100d757805160ff1916838001178555610105565b82800160010185558215610105579182015b828111156101045782518255916020019190600101906100e9565b5b5090506101129190610116565b5090565b61013891905b8082111561013457600081600090555060010161011c565b5090565b90565b6101578061014a6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a723058207d9c7f680d1c7018e92bc1a478e4aec033c1c6431b325cb661f5dfaa199701f40029",
-  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a723058207d9c7f680d1c7018e92bc1a478e4aec033c1c6431b325cb661f5dfaa199701f40029",
-  "sourceMap": "54:273:3:-;;;118:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;192:5;185:4;:12;;;;;;;;;;;;:::i;:::-;;214:5;207:4;;:12;;;;;;;;;;;;;;;;;;118:108;;54:273;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "54:273:3:-;;;;;;;;;;;;;;;;;;;;;;;;232:93;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;232:93:3;275:6;;:::i;:::-;293:25;;;;;;;;;;;;;;;;;;;;232:93;:::o;54:273::-;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.17;\n\nimport \"./MyDataType.sol\";\n\ncontract MyImport { \n    string name;\n    MyDataType myDT;\n\n    function MyImport(string _name, MyDataType _myDT) public {\n        name = _name;\n        myDT = _myDT;\n    }\n\n    function testOwnable() public pure returns(string) {\n        return \"from testOwnable\";\n    }\n}\n\n",
-  "sourcePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyImport.sol",
+  "bytecode": "0x6060604052341561000f57600080fd5b6040516102a13803806102a183398101604052808051820191906020018051906020019091905050816000908051906020019061004d929190610096565b5080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505061013b565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100d757805160ff1916838001178555610105565b82800160010185558215610105579182015b828111156101045782518255916020019190600101906100e9565b5b5090506101129190610116565b5090565b61013891905b8082111561013457600081600090555060010161011c565b5090565b90565b6101578061014a6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a72305820169f05aac021f81c8fbb0955efea493ed58d11fbb49b28c6b4e29878db0350600029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806301d06c7f14610046575b600080fd5b341561005157600080fd5b6100596100d4565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610117565b6040805190810160405280601081526020017f66726f6d20746573744f776e61626c6500000000000000000000000000000000815250905090565b6020604051908101604052806000815250905600a165627a7a72305820169f05aac021f81c8fbb0955efea493ed58d11fbb49b28c6b4e29878db0350600029",
+  "sourceMap": "54:287:1:-;;;125:115;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:5;199:4;:12;;;;;;;;;;;;:::i;:::-;;228:5;221:4;;:12;;;;;;;;;;;;;;;;;;125:115;;54:287;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "54:287:1:-;;;;;;;;;;;;;;;;;;;;;;;;246:93;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;246:93:1;289:6;;:::i;:::-;307:25;;;;;;;;;;;;;;;;;;;;246:93;:::o;54:287::-;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\nimport \"./MyDataType.sol\";\n\ncontract GreetingsParent { \n    string name;\n    MyDataType myDT;\n\n    function GreetingsParent(string _name, MyDataType _myDT) public {\n        name = _name;\n        myDT = _myDT;\n    }\n\n    function testOwnable() public pure returns(string) {\n        return \"from testOwnable\";\n    }\n}\n\n",
+  "sourcePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/GreetingsParent.sol",
   "ast": {
     "attributes": {
-      "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyImport.sol",
+      "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/GreetingsParent.sol",
       "exportedSymbols": {
-        "MyImport": [
-          152
+        "GreetingsParent": [
+          82
         ]
       }
     },
@@ -56,24 +56,24 @@
             ".17"
           ]
         },
-        "id": 122,
+        "id": 52,
         "name": "PragmaDirective",
-        "src": "0:24:3"
+        "src": "0:24:1"
       },
       {
         "attributes": {
-          "SourceUnit": 121,
+          "SourceUnit": 151,
           "absolutePath": "/Users/Colin/ChainSkills/Training/GreetingsTruffle/contracts/MyDataType.sol",
           "file": "./MyDataType.sol",
-          "scope": 153,
+          "scope": 83,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 123,
+        "id": 53,
         "name": "ImportDirective",
-        "src": "26:26:3"
+        "src": "26:26:1"
       },
       {
         "attributes": {
@@ -87,17 +87,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            152
+            82
           ],
-          "name": "MyImport",
-          "scope": 153
+          "name": "GreetingsParent",
+          "scope": 83
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "name",
-              "scope": 152,
+              "scope": 82,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string storage ref",
@@ -110,20 +110,20 @@
                   "name": "string",
                   "type": "string storage pointer"
                 },
-                "id": 124,
+                "id": 54,
                 "name": "ElementaryTypeName",
-                "src": "79:6:3"
+                "src": "86:6:1"
               }
             ],
-            "id": 125,
+            "id": 55,
             "name": "VariableDeclaration",
-            "src": "79:11:3"
+            "src": "86:11:1"
           },
           {
             "attributes": {
               "constant": false,
               "name": "myDT",
-              "scope": 152,
+              "scope": 82,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract MyDataType",
@@ -135,17 +135,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "MyDataType",
-                  "referencedDeclaration": 120,
+                  "referencedDeclaration": 150,
                   "type": "contract MyDataType"
                 },
-                "id": 126,
+                "id": 56,
                 "name": "UserDefinedTypeName",
-                "src": "96:10:3"
+                "src": "103:10:1"
               }
             ],
-            "id": 127,
+            "id": 57,
             "name": "VariableDeclaration",
-            "src": "96:15:3"
+            "src": "103:15:1"
           },
           {
             "attributes": {
@@ -155,9 +155,9 @@
               "modifiers": [
                 null
               ],
-              "name": "MyImport",
+              "name": "GreetingsParent",
               "payable": false,
-              "scope": 152,
+              "scope": 82,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -169,7 +169,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_name",
-                      "scope": 143,
+                      "scope": 73,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string memory",
@@ -182,20 +182,20 @@
                           "name": "string",
                           "type": "string storage pointer"
                         },
-                        "id": 128,
+                        "id": 58,
                         "name": "ElementaryTypeName",
-                        "src": "136:6:3"
+                        "src": "150:6:1"
                       }
                     ],
-                    "id": 129,
+                    "id": 59,
                     "name": "VariableDeclaration",
-                    "src": "136:12:3"
+                    "src": "150:12:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_myDT",
-                      "scope": 143,
+                      "scope": 73,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "contract MyDataType",
@@ -207,22 +207,22 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "MyDataType",
-                          "referencedDeclaration": 120,
+                          "referencedDeclaration": 150,
                           "type": "contract MyDataType"
                         },
-                        "id": 130,
+                        "id": 60,
                         "name": "UserDefinedTypeName",
-                        "src": "150:10:3"
+                        "src": "164:10:1"
                       }
                     ],
-                    "id": 131,
+                    "id": 61,
                     "name": "VariableDeclaration",
-                    "src": "150:16:3"
+                    "src": "164:16:1"
                   }
                 ],
-                "id": 132,
+                "id": 62,
                 "name": "ParameterList",
-                "src": "135:32:3"
+                "src": "149:32:1"
               },
               {
                 "attributes": {
@@ -231,9 +231,9 @@
                   ]
                 },
                 "children": [],
-                "id": 133,
+                "id": 63,
                 "name": "ParameterList",
-                "src": "175:0:3"
+                "src": "189:0:1"
               },
               {
                 "children": [
@@ -256,13 +256,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 125,
+                              "referencedDeclaration": 55,
                               "type": "string storage ref",
                               "value": "name"
                             },
-                            "id": 134,
+                            "id": 64,
                             "name": "Identifier",
-                            "src": "185:4:3"
+                            "src": "199:4:1"
                           },
                           {
                             "attributes": {
@@ -270,23 +270,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 129,
+                              "referencedDeclaration": 59,
                               "type": "string memory",
                               "value": "_name"
                             },
-                            "id": 135,
+                            "id": 65,
                             "name": "Identifier",
-                            "src": "192:5:3"
+                            "src": "206:5:1"
                           }
                         ],
-                        "id": 136,
+                        "id": 66,
                         "name": "Assignment",
-                        "src": "185:12:3"
+                        "src": "199:12:1"
                       }
                     ],
-                    "id": 137,
+                    "id": 67,
                     "name": "ExpressionStatement",
-                    "src": "185:12:3"
+                    "src": "199:12:1"
                   },
                   {
                     "children": [
@@ -307,13 +307,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 127,
+                              "referencedDeclaration": 57,
                               "type": "contract MyDataType",
                               "value": "myDT"
                             },
-                            "id": 138,
+                            "id": 68,
                             "name": "Identifier",
-                            "src": "207:4:3"
+                            "src": "221:4:1"
                           },
                           {
                             "attributes": {
@@ -321,33 +321,33 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 131,
+                              "referencedDeclaration": 61,
                               "type": "contract MyDataType",
                               "value": "_myDT"
                             },
-                            "id": 139,
+                            "id": 69,
                             "name": "Identifier",
-                            "src": "214:5:3"
+                            "src": "228:5:1"
                           }
                         ],
-                        "id": 140,
+                        "id": 70,
                         "name": "Assignment",
-                        "src": "207:12:3"
+                        "src": "221:12:1"
                       }
                     ],
-                    "id": 141,
+                    "id": 71,
                     "name": "ExpressionStatement",
-                    "src": "207:12:3"
+                    "src": "221:12:1"
                   }
                 ],
-                "id": 142,
+                "id": 72,
                 "name": "Block",
-                "src": "175:51:3"
+                "src": "189:51:1"
               }
             ],
-            "id": 143,
+            "id": 73,
             "name": "FunctionDefinition",
-            "src": "118:108:3"
+            "src": "125:115:1"
           },
           {
             "attributes": {
@@ -359,7 +359,7 @@
               ],
               "name": "testOwnable",
               "payable": false,
-              "scope": 152,
+              "scope": 82,
               "stateMutability": "pure",
               "superFunction": null,
               "visibility": "public"
@@ -372,9 +372,9 @@
                   ]
                 },
                 "children": [],
-                "id": 144,
+                "id": 74,
                 "name": "ParameterList",
-                "src": "252:2:3"
+                "src": "266:2:1"
               },
               {
                 "children": [
@@ -382,7 +382,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 151,
+                      "scope": 81,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string memory",
@@ -395,25 +395,25 @@
                           "name": "string",
                           "type": "string storage pointer"
                         },
-                        "id": 145,
+                        "id": 75,
                         "name": "ElementaryTypeName",
-                        "src": "275:6:3"
+                        "src": "289:6:1"
                       }
                     ],
-                    "id": 146,
+                    "id": 76,
                     "name": "VariableDeclaration",
-                    "src": "275:6:3"
+                    "src": "289:6:1"
                   }
                 ],
-                "id": 147,
+                "id": 77,
                 "name": "ParameterList",
-                "src": "274:8:3"
+                "src": "288:8:1"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 147
+                      "functionReturnParameters": 77
                     },
                     "children": [
                       {
@@ -429,34 +429,34 @@
                           "type": "literal_string \"from testOwnable\"",
                           "value": "from testOwnable"
                         },
-                        "id": 148,
+                        "id": 78,
                         "name": "Literal",
-                        "src": "300:18:3"
+                        "src": "314:18:1"
                       }
                     ],
-                    "id": 149,
+                    "id": 79,
                     "name": "Return",
-                    "src": "293:25:3"
+                    "src": "307:25:1"
                   }
                 ],
-                "id": 150,
+                "id": 80,
                 "name": "Block",
-                "src": "283:42:3"
+                "src": "297:42:1"
               }
             ],
-            "id": 151,
+            "id": 81,
             "name": "FunctionDefinition",
-            "src": "232:93:3"
+            "src": "246:93:1"
           }
         ],
-        "id": 152,
+        "id": 82,
         "name": "ContractDefinition",
-        "src": "54:273:3"
+        "src": "54:287:1"
       }
     ],
-    "id": 153,
+    "id": 83,
     "name": "SourceUnit",
-    "src": "0:329:3"
+    "src": "0:343:1"
   },
   "compiler": {
     "name": "solc",
@@ -464,5 +464,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-03-08T16:53:22.470Z"
+  "updatedAt": "2018-03-08T17:02:02.324Z"
 }
